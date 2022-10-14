@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/*CABECERA*/
 header h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -14,9 +14,15 @@ header h1{
     align-items: center;
     justify-content: center;
 }
-#img_pequeñas{
+/*-----------------*/
+.general{
     position: absolute;
-    height: 850px;
+    display: flex;
+    width: 100%;
+    height: 88%;
+}
+#img_pequeñas{
+    height: 99%;
     width: 200px;
     margin-left: 10px;
     overflow: auto;
@@ -33,18 +39,45 @@ header h1{
     height: 188px;
     margin: auto;
 }
-.general{
-    display: flex;
-    width: 100%;
-}
-#img_grande {
-    position: relative;
-    flex-direction: row;
+.img_grande {
+    margin-left: 10px;
     left:225px;
-    width: calc(50% - 200px);
+    width:calc(50% - 200px);
+    height: 100%;
+}
+.img_grande > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-}
-#contenido_derecha{
+.contenido_derecha {
     position: relative;
-    flex-direction: row;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    top: 50%;
+    height: 24%;
+    padding: 6%;
+    text-align: center;
 }
+
+.contenido_derecha > h1{
+    font-weight: 700;
+}
+
+.contenido_derecha  > p {
+    font-weight: 200;
+}
+
+button{
+    font-weight: 700;
+    background-color: #97c1c0;
+    border: none;
+    border-radius:10px;
+    padding: 10px 30px;
+}
+
+button:hover{
+    background-color: #04c5c0;
+}
+
