@@ -2,7 +2,9 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
 /*CABECERA*/
 header h1{
     position: sticky;
@@ -23,7 +25,7 @@ header h1{
     height: 88%;
 }
 #img_pequeñas{
-    height: 99%;
+    height: 100%;
     width: 200px;
     margin-left: 10px;
     overflow: auto;
@@ -71,6 +73,9 @@ header h1{
 .contenido_derecha  > p {
     font-weight: 200;
 }
+.activo{
+    display: block;
+}
 
 button{
     font-weight: 700;
@@ -94,6 +99,12 @@ button:hover{
     background-color: black;
     z-index: 100
 }
+h1{
+    font-weight: 700;
+}
+h3{
+    font-weight: 200;
+}
 .pop img{
     position: absolute;
     top: 50%;
@@ -102,5 +113,8 @@ button:hover{
     height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+}
+button{
+    font-weight: 700;
 }
 
